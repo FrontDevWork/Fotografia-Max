@@ -1,20 +1,25 @@
-.navegacao{
-padding: 0px 95px 0px 140px;
-max-width: ;
-
+.navegacao {
+    padding: 0px 95px 0px 140px;
 }
 
-.tst{
-
-
-}
-.ajs{
-
-    padding: 10px;
+.banner img {
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
 }
 
-.ajt{
-    margin:auto;
-    padding: 15px 0px 0px 100px;
+.box-fotografia {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
+.fotografia .item-fotografia {
+    padding: 30px;
+}
+.item-fotografia img {
+    border: 3px solid #616161;
+    box-shadow: 0 0 20px 5px #616161;
+    border-radius: 10px;
+}
