@@ -20,8 +20,18 @@
     width: 1%;
 }
 
+.context-galeria {
+    text-align: center;
+    padding: 20px 0px 20px 10px;
+    margin-top: 80px;
+}
+
+.text-galeria {
+    font-size: 50px;
+}
+
 .nav-menu {
-    background: #6495ED;
+    background: #190707;
 }
 
 .text {
@@ -31,7 +41,6 @@
 .text-tamanho {
 
     font-size: 30px;
-    text-align: center;
     bottom: 200px;
     left: 5%;
     right: 5%;
@@ -43,11 +52,6 @@
 
 
 .botao-banner {
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .3rem;
-    margin: auto;
-
 }
 
 
@@ -79,8 +83,8 @@
     border-radius: 10px;
 }
 
-.fundo{
-    background-color: #6495ED;
+.fundo {
+    background-color: #190707;
     color: #ffffff;
 }
 
@@ -88,12 +92,14 @@
     text-align: center;
 }
 
-.fone{;
+.fone {
+    ;
 
 }
 
 .descricao-contato {
     text-align: center;
+    font-size: 15px;
 }
 
 
