@@ -1,23 +1,13 @@
 .navegacao {
     padding: 0px 70px 0px 70px;
     margin: auto;
-    font-size: 15px;
-
-
+    font-size: 15px
 }
 
-.banner img {
-    max-height: 500px;
+.banner-img{
+    height: 400px;
     object-fit: cover;
     object-position: center;
-}
-
-.prev {
-    width: 1%;
-}
-
-.next {
-    width: 1%;
 }
 
 .context-galeria {
@@ -49,10 +39,6 @@
     position: absolute;
 }
 
-
-
-.botao-banner {
-}
 
 
 .box-fotografia {
@@ -90,11 +76,6 @@
 
 .contatar {
     text-align: center;
-}
-
-.fone {
-    ;
-
 }
 
 .descricao-contato {
@@ -149,21 +130,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* O container geral define a perspectiva */
 .flip-container {
     perspective: 1000;
@@ -207,32 +173,3 @@
 .back {
     transform: rotateY(180deg);
 }
-
-
-/*
-    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-        <div class="flipper">
-            <div class="front">
-                <!-- Conteúdo da frente -->
-
-            </div>
-            <div class="back">
-                <!-- Conteúdo do verso -->
-            </div>
-        </div>
-    </div>
-    */
-
-
-
-
-
-bottom: 20px;
-padding-top: 20px;
-padding-bottom: 50px;
-left: 5%;
-right: 5%;
-text-align: center;
-color: #ffffff;
-font-size: 80px;
-position: absolute;
