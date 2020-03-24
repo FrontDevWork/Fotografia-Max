@@ -57,10 +57,14 @@
     padding: 10px 10px 10px 10px;
 }
 
-.tamanho {
-    padding: 30px;
+.img-galeria {
+    margin: 50px;
     height: 210px;
-    width: 250px;
+    width: 210px;
+    object-fit: cover;
+    object-position: center;
+    border: #ccc 3px solid;
+    box-shadow: 0 0 10px 2px;
 }
 
 .item-fotografia img {
@@ -78,7 +82,7 @@
     text-align: center;
 }
 
-.descricao-contato {
+.descricao-footer {
     text-align: center;
     font-size: 15px;
 }
@@ -115,12 +119,11 @@
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-
 }
 
 /* contato conosco*/
 
-.titulo-contato {
+.titulo {
     text-align: center;
     padding: 20px;
 }
