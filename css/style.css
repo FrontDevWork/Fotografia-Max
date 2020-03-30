@@ -18,12 +18,9 @@
 
 .text-galeria {
     font-size: 50px;
-    color: #D8D8D8;
+    color: #343a40;
 }
 
-.nav-menu {
-    background: #190707;
-}
 
 .text {
     color: white;
@@ -158,7 +155,7 @@
 /*footer*/
 
 .fundo {
-    background-color: #190707;
+    background-color: #343a40;
     color: #ffffff;
 }
 
@@ -181,8 +178,6 @@
     margin-top: 50px;
     margin-bottom: 50px;
     font-weight: bold;
-    color: ;
-    color: ;
     text-align: center;
 
 }
