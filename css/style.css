@@ -187,6 +187,10 @@
     margin-bottom: 20px;
 }
 
+.card-text-paragrafo{
+    padding: 15px 20px 15px 20px;
+}
+
 .card-alinhamento{
     text-align: center;
     margin-top: 20px;
