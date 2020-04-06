@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .navegacao {
     padding: 0px 50px 0px 50px;
     margin: auto;
@@ -18,20 +22,21 @@
 
 .text-galeria {
     font-size: 50px;
-    color: #D8D8D8;
+    color: #000;
 }
 
 .nav-menu {
-    background: #190707;
+    background: #7951C2;
+    padding: 15px 0;
 }
 
 .text {
-    color: white;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .text-tamanho {
-
-    font-size: 30px;
     bottom: 200px;
     left: 5%;
     right: 5%;
@@ -47,7 +52,6 @@
     margin-bottom: 50px;
     flex-flow: row wrap;
     justify-content: center;
-    background: ;
 }
 
 .row {
@@ -69,6 +73,11 @@
     object-position: center;
 }
 
+.card-text {
+    padding: 35px;
+    text-align: justify;
+}
+
 .item-fotografia img {
     border: 3px solid #3f3939;
     box-shadow: 0 0 20px 5px #616161;
@@ -76,7 +85,7 @@
 }
 
 .fundo {
-    background-color: #190707;
+    background-color: #7951C2;
     color: #ffffff;
 }
 
@@ -99,16 +108,17 @@
 }
 
 .zoom .img-galeria {
+    box-shadow: 0 0 20px 5px #616161;
     max-width: 100%;
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+    border: 4px solid #A793CC;
+    border-radius: 8px;
     transition: all 0.5s;
 }
 
 .zoom:hover .img-galeria {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 /* contato conosco*/
@@ -120,7 +130,7 @@
     color: #0B0B3B;
 }
 
-.faleconosco{
+.faleconosco {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -135,7 +145,7 @@
 .contborda {
     width: 190px;
     padding-left: 10px;
-    font-size: 22px;
+    font-size: 18px;
     color: #9c9c9c;
 }
 
@@ -159,6 +169,7 @@
 
 .fundo {
     background-color: #190707;
+    padding: 30px 0;
     color: #ffffff;
 }
 
@@ -168,12 +179,12 @@
 
 .descricao-footer {
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 /* depoimentos */
 
-.box-depoimento{
+.box-depoimento {
     background: #E6E6E6;
 }
 
@@ -181,10 +192,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
     font-weight: bold;
-    color: ;
-    color: ;
     text-align: center;
-
 }
 
 .espacamento {
@@ -192,77 +200,22 @@
     margin-bottom: 20px;
 }
 
-.card-alinhamento{
+.card-alinhamento {
     text-align: center;
     margin-top: 20px;
 }
 
 .img-circle {
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
     width: 200px;
     height: 200px;
     margin-bottom: 10px;
 }
 
-.namedepoimentos{
-text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* O container geral define a perspectiva */
-.flip-container {
-    perspective: 1000;
-}
-
-/* vira os containers frente e verso quando o mouse passa em cima */
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-    transform: rotateY(180deg);
-}
-
-.flip-container,
-.front,
-.back {
-    width: 320px;
-    height: 480px;
-}
-
-/* define a velocidade da transição */
-.flipper {
-    transition: 0.6s;
-    transform-style: preserve-3d;
-    position: relative;
-}
-
-/* esconde o verso durante a animação */
-.front,
-.back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/* frente posicionada sobre o verso */
-.front {
-    z-index: 2;
-}
-
-/* verso inicialmente escondido */
-.back {
-    transform: rotateY(180deg);
+.namedepoimentos {
+    text-align: center;
+    padding: 20px 0;
+    font-style: oblique;
 }
