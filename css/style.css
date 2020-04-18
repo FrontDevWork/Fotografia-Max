@@ -2,6 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding: 0px;
     margin: 0px;
+    overflow-x: hidden;
 }
 
 .text {
@@ -28,25 +29,14 @@ body {
 }
 
 /*galeria*/
-.flex-column { 
-    max-width : 260px;
-}
-.container-galeria {
-    background: #f9f9f9;
-    padding: 0px;
+
+.container-galeria{
+    background: #E6E6E6;
 }
 
-.img-fluid {
-    margin: 5px;
-}
-
-/*galeria old*/
-/* .box-fotografia {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    flex-flow: row wrap;
-    justify-content: center;
-    text-align: center;
+.box-galeria {	
+    text-align: center;	
+    padding: 20px 0px 20px 10px;	
 }
 
 .text-galeria {
@@ -54,34 +44,25 @@ body {
     color: #000;
 }
 
-.img-galeria {
-    margin: 50px;
-    max-width: 100%;
-    width: 210px;
-    height: 210px;
+.flex-column { 
+    width : 320px;
+    height: 240px;
+    background: #E6E6E6;
+}
+
+.img-fluid {
     object-fit: cover;
     object-position: center;
-} */
-
-/*efeito do zoom nas imagens*/
-
-/* .zoom {
-    overflow: hidden;
-    text-align: center;
+    transition: all .5s;
 }
 
-.zoom .img-galeria {
-    max-width: 100%;
-    transition: all 0.5s;
+.img-fluid:hover {
+    transform: scale(1.2);
 }
-
-.zoom:hover .img-galeria {
-    transform: scale(1.4);
-} */
 
 /* depoimento */
 
-.box-depoimento {
+.container-depoimento {
     background: #E6E6E6;
 }
 
