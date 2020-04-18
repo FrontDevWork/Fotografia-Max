@@ -2,16 +2,36 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.navegacao {
-    padding: 0px 50px 0px 50px;
-    margin: auto;
-    font-size: 15px
+.text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
 }
+
+/*banner*/
 
 .banner-img {
     height: 400px;
     object-fit: cover;
     object-position: center;
+}
+
+.text-tamanho {
+    bottom: 200px;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+}
+
+/*galeria*/
+
+.box-fotografia {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .context-galeria {
@@ -25,41 +45,6 @@ body {
     color: #000;
 }
 
-.nav-menu {
-    background: #7951C2;
-    padding: 15px 0;
-}
-
-.text {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.text-tamanho {
-    bottom: 200px;
-    left: 5%;
-    right: 5%;
-    text-align: center;
-    color: #ffffff;
-    position: absolute;
-}
-
-
-
-.box-fotografia {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.row {
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
-
 .fotografia {
     padding: 10px 10px 10px 10px;
 }
@@ -72,33 +57,6 @@ body {
     object-fit: cover;
     object-position: center;
 }
-
-.card-text {
-    padding: 35px;
-    text-align: justify;
-}
-
-.item-fotografia img {
-    border: 3px solid #3f3939;
-    box-shadow: 0 0 20px 5px #616161;
-    border-radius: 10px;
-}
-
-.fundo {
-    background-color: #7951C2;
-    color: #ffffff;
-}
-
-.contatar {
-    text-align: center;
-}
-
-.descricao-footer {
-    text-align: center;
-    font-size: 15px;
-}
-
-
 
 /*efeito do zoom nas imagens*/
 
@@ -121,68 +79,7 @@ body {
     transform: scale(1.2);
 }
 
-/* contato conosco*/
-
-.titulo {
-    margin-top: 20px;
-    text-align: center;
-    font-weight: bold;
-    color: #0B0B3B;
-}
-
-.faleconosco {
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.send-message {
-    border: solid 2px #9c9c9c;
-    border-radius: 5px;
-    padding: 40px 20px 60px 20px;
-}
-
-.contborda {
-    width: 190px;
-    padding-left: 10px;
-    font-size: 18px;
-    color: #9c9c9c;
-}
-
-.form-group {
-    font-weight: bold;
-}
-
-.btenviar {
-    margin-top: 20px;
-    margin-left: 15px;
-    padding: 10px 40px 10px 40px;
-}
-
-.textenvia {
-    text-align: center;
-    font-size: 0.5rem;
-
-}
-
-/*footer*/
-
-.fundo {
-    background-color: #190707;
-    padding: 30px 0;
-    color: #ffffff;
-}
-
-.contatar {
-    text-align: center;
-}
-
-.descricao-footer {
-    text-align: center;
-    font-size: 18px;
-}
-
-/* depoimentos */
+/* depoimento */
 
 .box-depoimento {
     background: #E6E6E6;
@@ -214,8 +111,55 @@ body {
     margin-bottom: 10px;
 }
 
+.card-text {
+    padding: 35px;
+    text-align: justify;
+}
+
 .namedepoimentos {
     text-align: center;
     padding: 20px 0;
     font-style: oblique;
+}
+
+/* contato*/
+
+.titulo {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #0B0B3B;
+}
+
+.faleconosco {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.send-message {
+    border: solid 2px #9c9c9c;
+    border-radius: 5px;
+    padding: 40px 20px 60px 20px;
+    font-weight: bold;
+}
+
+.contborda {
+    width: 190px;
+    padding-left: 10px;
+    font-size: 18px;
+    color: #9c9c9c;
+}
+
+/*footer*/
+
+.fundo {
+    background-color: #190707;
+    padding: 30px 0;
+    color: #ffffff;
+}
+
+.descricao-footer {
+    text-align: center;
+    font-size: 18px;
 }
