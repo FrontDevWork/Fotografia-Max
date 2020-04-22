@@ -13,7 +13,8 @@
 .context-galeria {
     text-align: center;
     padding: 20px 0px 20px 10px;
-    margin-top: 80px;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 
 .text-galeria {
@@ -37,14 +38,37 @@
     position: absolute;
 }
 
+.redesocial-face {
+    position: absolute;
+    bottom: 180px;
+    margin-left: 0px;
+}
+
+.redesocial-instagram {
+    position: absolute;
+    bottom: 180px;
+    margin-left: 50px;
+}
+
+.redesocial-twitter {
+    position: absolute;
+    bottom: 180px;
+    margin-left: 100px;
+}
+
+.redesocial-whatsapp {
+    position: absolute;
+    bottom: 180px;
+    margin-left: 150px;
+}
 
 
 .box-fotografia {
-    margin-top: 50px;
+    /*  margin-top: 50px;
     margin-bottom: 50px;
     flex-flow: row wrap;
     justify-content: center;
-    background: ;
+    */
 }
 
 .row {
@@ -55,21 +79,54 @@
 
 .fotografia {
     padding: 10px 10px 10px 10px;
+    margin-bottom: 80px;
 }
 
-.img-galeria {
-    margin: 50px;
-    max-width: 100%;
-    width: 210px;
-    height: 210px;
+.coluna {
+    float: left;
+    width: 33.33%;
+    height: auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    >.col,
+    >[class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+.foto-galeria {
     object-fit: cover;
     object-position: center;
+    width: 370px;
+    height: 250px;
+}
+
+
+
+.img-galeria {
+    object-fit: cover;
+    object-position: center;
+    width: 363px;
 }
 
 .item-fotografia img {
-    border: 3px solid #3f3939;
-    box-shadow: 0 0 20px 5px #616161;
+    /*border: 3px solid #3f3939;
+    box-shadow: 0 0  5px #616161;
     border-radius: 10px;
+    */
 }
 
 .fundo {
@@ -95,14 +152,14 @@
     text-align: center;
 }
 
-.zoom .img-galeria {
+.zoom .foto-galeria {
     max-width: 100%;
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
-.zoom:hover .img-galeria {
+.zoom:hover .foto-galeria {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -117,15 +174,12 @@
     color: #0B0B3B;
 }
 
-.faleconosco{
-    margin: auto;
+.faleconosco {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .send-message {
-    border: solid 2px #9c9c9c;
-    border-radius: 5px;
     padding: 40px 20px 60px 20px;
 }
 
@@ -170,45 +224,121 @@
 
 /* depoimentos */
 
-.box-depoimento{
+
+.box-depoimento {
     background: #E6E6E6;
 }
 
 .titulo-depoimento {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 450;
     text-align: center;
-
 }
 
 .espacamento {
-    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
     margin-bottom: 20px;
 }
 
-.card-text-paragrafo{
-    padding: 15px 20px 15px 20px;
+.textdepoimento{
+    font-weight: 500;
+    ;
 }
 
-.card-alinhamento{
+.namedepoimentos {
     text-align: center;
-    margin-top: 20px;
 }
+
+.card-alinhamento {
+    margin:auto;
+    margin-top: 50px;
+}
+
 
 .img-circle {
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    margin-bottom: 10px;
-}
-
-.namedepoimentos{
-text-align: center;
 }
 
 
 
+.wrap-redesocialflip {
+    top: 180px;
+    object-fit: cover;
+    position: relative;
+}
+
+
+.flip-left {
+    -webkit-animation: flipLeft 1 1s ease-out;
+    -moz-animation: flipLeft 1 1s ease-out;
+    -ms-animation: flipLeft 1 1s ease-out;
+    -o-animation: flipLeft 1 1s ease-out;
+    animation: flipLeft 1 1s ease-out;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes flipLeft {
+    0% {
+        -webkit-transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    70% {
+        -webkit-transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.flip-card {
+    margin-top: 20px;
+    background-color: transparent;
+    height: 300px;
+    perspective: 1000px;
+    text-align: center;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+}
+
+/* Style the back side */
+.flip-card-back {
+    transform: rotateY(180deg);
+}
 
 
 
@@ -222,12 +352,20 @@ text-align: center;
 
 
 
-/* O container geral define a perspectiva */
+
+
+
+
+
+
+<!--
+ /*O container geral define a perspectiva 
 .flip-container {
     perspective: 1000;
 }
 
-/* vira os containers frente e verso quando o mouse passa em cima */
+ /*vira os containers frente e verso quando o mouse passa em cima
+
 .flip-container:hover .flipper,
 .flip-container.hover .flipper {
     transform: rotateY(180deg);
@@ -235,26 +373,40 @@ text-align: center;
 
 .flip-container,
 .front,
-.back {
-    width: 320px;
-    height: 480px;
-}
+.back {}
 
-/* define a velocidade da transição */
+/*define a velocidade da transição
 .flipper {
     transition: 0.6s;
+    height: 350px;
     transform-style: preserve-3d;
     position: relative;
 }
 
-/* esconde o verso durante a animação */
+/*esconde o verso durante a animação 
 .front,
 .back {
-    backface-visibility: hidden;
     position: absolute;
-    top: 0;
-    left: 0;
+    backface-visibility: hidden;
+
 }
+*/
+
+/*frente posicionada sobre o verso*/
+.front {
+    z-index: 2;
+}
+
+ /*verso inicialmente escondido*/
+.back {
+    transform: rotateY(180deg);
+}-->
+
+
+
+
+
+
 
 /* frente posicionada sobre o verso */
 .front {
@@ -265,3 +417,92 @@ text-align: center;
 .back {
     transform: rotateY(180deg);
 }
+
+/*efeito flipleft
+
+@-moz-keyframes flipLeft {
+        0% {
+            -moz-transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        70% {
+            -moz-transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @-ms-keyframes flipLeft {
+        0% {
+            -ms-transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        70% {
+            -ms-transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes flipLeft {
+        0% {
+            -o-transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        70% {
+            -o-transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes flipLeft {
+        0% {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        70% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes flipLeft {
+        0% {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        70% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes flipLeft {
+        0% {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        70% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes flipLeft {
+        0% {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        70% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+
+    */
