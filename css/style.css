@@ -1,8 +1,17 @@
-.navegacao {
-    padding: 0px 50px 0px 50px;
-    margin: auto;
-    font-size: 15px
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
 }
+
+.text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*banner*/
 
 .banner-img {
     height: 400px;
@@ -10,6 +19,7 @@
     object-position: center;
 }
 
+<<<<<<< HEAD
 .context-galeria {
     text-align: center;
     padding: 20px 0px 20px 10px;
@@ -27,9 +37,9 @@
     color: white;
 }
 
+=======
+>>>>>>> a85514f8452332f82dcc69ec0652bb563a712b97
 .text-tamanho {
-
-    font-size: 30px;
     bottom: 200px;
     left: 5%;
     right: 5%;
@@ -38,6 +48,7 @@
     position: absolute;
 }
 
+<<<<<<< HEAD
 .redesocial-face {
     position: absolute;
     bottom: 180px;
@@ -69,14 +80,25 @@
     flex-flow: row wrap;
     justify-content: center;
     */
+=======
+/*galeria*/
+
+.container-galeria{
+    background: #E6E6E6;
+>>>>>>> a85514f8452332f82dcc69ec0652bb563a712b97
 }
 
-.row {
-    margin-right: 0px;
-    margin-left: 0px;
+.box-galeria {	
+    text-align: center;	
+    padding: 20px 0px 20px 10px;	
 }
 
+.text-galeria {
+    font-size: 50px;
+    color: #000;
+}
 
+<<<<<<< HEAD
 .fotografia {
     padding: 10px 10px 10px 10px;
     margin-bottom: 80px;
@@ -127,31 +149,57 @@
     box-shadow: 0 0  5px #616161;
     border-radius: 10px;
     */
+=======
+.flex-column { 
+    width : 320px;
+    height: 240px;
+    background: #E6E6E6;
 }
 
-.fundo {
-    background-color: #190707;
-    color: #ffffff;
+.img-fluid {
+    object-fit: cover;
+    object-position: center;
+    transition: all .5s;
 }
 
-.contatar {
+.img-fluid:hover {
+    transform: scale(1.2);
+>>>>>>> a85514f8452332f82dcc69ec0652bb563a712b97
+}
+
+/* depoimento */
+
+.container-depoimento {
+    background: #E6E6E6;
+}
+
+.titulo-depoimento {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
     text-align: center;
 }
 
-.descricao-footer {
-    text-align: center;
-    font-size: 15px;
+.espacamento {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-
-
-/*efeito do zoom nas imagens*/
-
-.zoom {
-    overflow: hidden;
+.card-alinhamento {
     text-align: center;
+    margin-top: 20px;
 }
 
+.img-circle {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+<<<<<<< HEAD
 .zoom .foto-galeria {
     max-width: 100%;
     -moz-transition: all 0.5s;
@@ -163,9 +211,20 @@
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+=======
+.card-text {
+    padding: 35px;
+    text-align: justify;
 }
 
-/* contato conosco*/
+.namedepoimentos {
+    text-align: center;
+    padding: 20px 0;
+    font-style: oblique;
+>>>>>>> a85514f8452332f82dcc69ec0652bb563a712b97
+}
+
+/* contato*/
 
 .titulo {
     margin-top: 20px;
@@ -175,50 +234,37 @@
 }
 
 .faleconosco {
+<<<<<<< HEAD
+=======
+    margin: auto;
+>>>>>>> a85514f8452332f82dcc69ec0652bb563a712b97
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .send-message {
     padding: 40px 20px 60px 20px;
+    font-weight: bold;
 }
 
 .contborda {
     width: 190px;
     padding-left: 10px;
-    font-size: 22px;
+    font-size: 18px;
     color: #9c9c9c;
-}
-
-.form-group {
-    font-weight: bold;
-}
-
-.btenviar {
-    margin-top: 20px;
-    margin-left: 15px;
-    padding: 10px 40px 10px 40px;
-}
-
-.textenvia {
-    text-align: center;
-    font-size: 0.5rem;
-
 }
 
 /*footer*/
 
 .fundo {
-    background-color: #343a40;
+    background-color: #190707;
+    padding: 30px 0;
     color: #ffffff;
-}
-
-.contatar {
-    text-align: center;
 }
 
 .descricao-footer {
     text-align: center;
+<<<<<<< HEAD
     font-size: 15px;
 }
 
@@ -506,3 +552,7 @@
 
 
     */
+=======
+    font-size: 18px;
+}
+>>>>>>> a85514f8452332f82dcc69ec0652bb563a712b97
