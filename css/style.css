@@ -19,7 +19,6 @@ body {
     object-position: center;
 }
 
-<<<<<<< HEAD
 .context-galeria {
     text-align: center;
     padding: 20px 0px 20px 10px;
@@ -37,8 +36,6 @@ body {
     color: white;
 }
 
-=======
->>>>>>> a85514f8452332f82dcc69ec0652bb563a712b97
 .text-tamanho {
     bottom: 200px;
     left: 5%;
@@ -48,7 +45,6 @@ body {
     position: absolute;
 }
 
-<<<<<<< HEAD
 .redesocial-face {
     position: absolute;
     bottom: 180px;
@@ -80,17 +76,11 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     */
-=======
-/*galeria*/
-
-.container-galeria{
-    background: #E6E6E6;
->>>>>>> a85514f8452332f82dcc69ec0652bb563a712b97
 }
 
-.box-galeria {	
-    text-align: center;	
-    padding: 20px 0px 20px 10px;	
+.box-galeria {
+    text-align: center;
+    padding: 20px 0px 20px 10px;
 }
 
 .text-galeria {
@@ -98,7 +88,6 @@ body {
     color: #000;
 }
 
-<<<<<<< HEAD
 .fotografia {
     padding: 10px 10px 10px 10px;
     margin-bottom: 80px;
@@ -149,22 +138,6 @@ body {
     box-shadow: 0 0  5px #616161;
     border-radius: 10px;
     */
-=======
-.flex-column { 
-    width : 320px;
-    height: 240px;
-    background: #E6E6E6;
-}
-
-.img-fluid {
-    object-fit: cover;
-    object-position: center;
-    transition: all .5s;
-}
-
-.img-fluid:hover {
-    transform: scale(1.2);
->>>>>>> a85514f8452332f82dcc69ec0652bb563a712b97
 }
 
 /* depoimento */
@@ -199,7 +172,10 @@ body {
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
+.zoom {
+    overflow: hidden;
+}
+
 .zoom .foto-galeria {
     max-width: 100%;
     -moz-transition: all 0.5s;
@@ -211,17 +187,6 @@ body {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-=======
-.card-text {
-    padding: 35px;
-    text-align: justify;
-}
-
-.namedepoimentos {
-    text-align: center;
-    padding: 20px 0;
-    font-style: oblique;
->>>>>>> a85514f8452332f82dcc69ec0652bb563a712b97
 }
 
 /* contato*/
@@ -234,10 +199,6 @@ body {
 }
 
 .faleconosco {
-<<<<<<< HEAD
-=======
-    margin: auto;
->>>>>>> a85514f8452332f82dcc69ec0652bb563a712b97
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -254,6 +215,12 @@ body {
     color: #9c9c9c;
 }
 
+.contato {
+}
+
+.fundocontato {
+    background-image: url(images/backcontato.jpg);
+}
 /*footer*/
 
 .fundo {
@@ -264,7 +231,6 @@ body {
 
 .descricao-footer {
     text-align: center;
-<<<<<<< HEAD
     font-size: 15px;
 }
 
@@ -287,7 +253,7 @@ body {
     margin-bottom: 20px;
 }
 
-.textdepoimento{
+.textdepoimento {
     font-weight: 500;
     ;
 }
@@ -297,7 +263,7 @@ body {
 }
 
 .card-alinhamento {
-    margin:auto;
+    margin: auto;
     margin-top: 50px;
 }
 
@@ -378,8 +344,7 @@ body {
 }
 
 /* Style the front side (fallback if image is missing) */
-.flip-card-front {
-}
+.flip-card-front {}
 
 /* Style the back side */
 .flip-card-back {
@@ -404,8 +369,8 @@ body {
 
 
 
-<!--
- /*O container geral define a perspectiva 
+
+/*O container geral define a perspectiva 
 .flip-container {
     perspective: 1000;
 }
@@ -443,16 +408,12 @@ body {
     z-index: 2;
 }
 
- /*verso inicialmente escondido*/
+/*verso inicialmente escondido*/
 .back {
     transform: rotateY(180deg);
-}-->
+}
 
-
-
-
-
-
+-->
 
 /* frente posicionada sobre o verso */
 .front {
@@ -552,7 +513,3 @@ body {
 
 
     */
-=======
-    font-size: 18px;
-}
->>>>>>> a85514f8452332f82dcc69ec0652bb563a712b97
